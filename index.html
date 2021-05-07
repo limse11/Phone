@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body><!--
+<body>
     <div id="loading-screen">
         <img id="loading-img" src="icons/load.svg">
     </div>
-    LOCK SCREEN
+    <!--LOCK SCREEN-->
     <div id="lock-screen">
         <form>
             <p>PIN</p>
@@ -40,7 +40,7 @@
             </table>
         </form>
     </div>
-    MAIN PAGE LAYOUT-->
+    <!--MAIN PAGE LAYOUT-->
     <div id="main-lock-overlay">
         <div id="clock">
             <p id="clock-time"></p>
@@ -357,23 +357,79 @@
     <!--PLAYER APP-->
     <div id="player-app">
         <div id="player-header">
-            <img id="player-home" src="icons/home.svg">
+            <img id="player-home" src="icons/player-home.svg">
             <img src="icons/play.svg">
             <p>Player</p>
         </div>
         <div id="player-app-header"></div>
         <div id="player-content">
-            <div id="play-box-one"><img class="play-img" src="https://expertphotography.com/wp-content/uploads/2019/08/1-1.jpg"><div id="play-one"></div></div>
-            <div id="play-box-two"><div class="play-overlay"></div></div>
-            <div id="play-box-three"><div class="play-overlay"></div></div>
-            <div id="play-box-four"><div class="play-overlay"></div></div>
-            <div id="play-box-five"><div class="play-overlay"></div></div>
-            <div id="play-box-six"><div class="play-overlay"></div></div>
-            <div id="play-box-seven"><div class="play-overlay"></div></div>
-            <div id="play-box-eight"><div class="play-overlay"></div></div>
+            <div id="play-box-one">
+                <img class="play-img" src="music/themosthated.jpg">
+                <div id="play-one">
+                    <img class="play-button" src="icons/play-button.svg">
+                </div>
+                <p class="play-title">The Worst</p>
+                <p class="play-small-title">Polyphia</p>
+            </div>
+            <div id="play-box-two">
+                <img class="play-img" src="music/int-cover.jpeg">
+                <div id="play-two">
+                    <img class="play-button" src="icons/play-button.svg">
+                </div>
+                <p class="play-title">Mountains</p>
+                <p class="play-small-title">Hans Zimmer</p>
+            </div>
+            <div id="play-box-three">
+                <img class="play-img" src="music/nir-cover.jpg">
+                <div id="play-three">
+                    <img class="play-button" src="icons/play-button.svg">
+                </div>
+                <p class="play-title">Heart Shaped Box</p>
+                <p class="play-small-title">Nirvana</p>
+            </div>
+            <div id="play-box-four">
+                <img class="play-img" src="music/nlnd-cover.jpg">
+                <div id="play-four">
+                    <img class="play-button" src="icons/play-button.svg">
+                </div>
+                <p class="play-title">G.O.A.T.</p>
+                <p class="play-small-title">Polyphia</p>
+            </div>
+            <div id="play-box-five">
+                <img class="play-img" src="music/ren-cover.jpg">
+                <div id="play-five">
+                    <img class="play-button" src="icons/play-button.svg">
+                </div>
+                <p class="play-title">Bittersweet</p>
+                <p class="play-small-title">Polyphia</p>
+            </div>
+            <div id="play-box-six">
+                <img class="play-img" src="icons/play-button.svg">
+                <div id="play-six">
+                    <img class="play-button" src="icons/play-button.svg">
+                </div>
+                <p class="play-title">Play Title</p>
+                <p class="play-small-title">The Smiths</p>
+            </div>
+            <div id="play-box-seven">
+                <img class="play-img" src="https://expertphotography.com/wp-content/uploads/2019/08/1-1.jpg">
+                <div id="play-seven">
+                    <img class="play-button" src="icons/play-button.svg">
+                </div>
+                <p class="play-title">Play Title</p>
+                <p class="play-small-title">The Smiths</p>
+            </div>
+            <div id="play-box-eight">
+                <img class="play-img" src="https://expertphotography.com/wp-content/uploads/2019/08/1-1.jpg">
+                <div id="play-eight">
+                    <img class="play-button" src="icons/play-button.svg">
+                </div>
+                <p class="play-title">Play Title</p>
+                <p class="play-small-title">The Smiths</p>
+            </div>
         </div>
         <div id="player-current">
-            <audio controls src="music/test.wav"></audio>
+            <audio id="player-audio" controls src="" autoplay></audio>
         </div>
     <script src="script.js"></script>
 </body>

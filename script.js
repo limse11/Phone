@@ -60,10 +60,92 @@ document.querySelector('#player-home').onclick = function playerAppExit(){
     document.querySelector('#player-app').style.display = "none";
 }
 document.querySelector('#play-box-one').onmouseover = function (){
+    document.querySelector('#play-box-one').style.backgroundColor = "rgb(25, 26, 31)";
     document.querySelector('#play-one').style.height = "100px";
     document.querySelector('#play-box-one').onmouseout = function (){
         document.querySelector('#play-one').style.height = "0px";
+        document.querySelector('#play-box-one').style.backgroundColor = "transparent";
     }
+}
+document.querySelector('#play-box-two').onmouseover = function (){
+    document.querySelector('#play-box-two').style.backgroundColor = "rgb(25, 26, 31)";
+    document.querySelector('#play-two').style.height = "100px";
+    document.querySelector('#play-box-two').onmouseout = function (){
+        document.querySelector('#play-two').style.height = "0px";
+        document.querySelector('#play-box-two').style.backgroundColor = "transparent";
+    }
+}
+document.querySelector('#play-box-three').onmouseover = function (){
+    document.querySelector('#play-box-three').style.backgroundColor = "rgb(25, 26, 31)";
+    document.querySelector('#play-three').style.height = "100px";
+    document.querySelector('#play-box-three').onmouseout = function (){
+        document.querySelector('#play-three').style.height = "0px";
+        document.querySelector('#play-box-three').style.backgroundColor = "transparent";
+    }
+}
+document.querySelector('#play-box-four').onmouseover = function (){
+    document.querySelector('#play-box-four').style.backgroundColor = "rgb(25, 26, 31)";
+    document.querySelector('#play-four').style.height = "100px";
+    document.querySelector('#play-box-four').onmouseout = function (){
+        document.querySelector('#play-four').style.height = "0px";
+        document.querySelector('#play-box-four').style.backgroundColor = "transparent";
+    }
+}
+document.querySelector('#play-box-five').onmouseover = function (){
+    document.querySelector('#play-box-five').style.backgroundColor = "rgb(25, 26, 31)";
+    document.querySelector('#play-five').style.height = "100px";
+    document.querySelector('#play-box-five').onmouseout = function (){
+        document.querySelector('#play-five').style.height = "0px";
+        document.querySelector('#play-box-five').style.backgroundColor = "transparent";
+    }
+}
+document.querySelector('#play-box-six').onmouseover = function (){
+    document.querySelector('#play-box-six').style.backgroundColor = "rgb(25, 26, 31)";
+    document.querySelector('#play-six').style.height = "100px";
+    document.querySelector('#play-box-six').onmouseout = function (){
+        document.querySelector('#play-six').style.height = "0px";
+        document.querySelector('#play-box-six').style.backgroundColor = "transparent";
+    }
+}
+document.querySelector('#play-box-seven').onmouseover = function (){
+    document.querySelector('#play-box-seven').style.backgroundColor = "rgb(25, 26, 31)";
+    document.querySelector('#play-seven').style.height = "100px";
+    document.querySelector('#play-box-seven').onmouseout = function (){
+        document.querySelector('#play-seven').style.height = "0px";
+        document.querySelector('#play-box-seven').style.backgroundColor = "transparent";
+    }
+}
+document.querySelector('#play-box-eight').onmouseover = function (){
+    document.querySelector('#play-box-eight').style.backgroundColor = "rgb(25, 26, 31)";
+    document.querySelector('#play-eight').style.height = "100px";
+    document.querySelector('#play-box-eight').onmouseout = function (){
+        document.querySelector('#play-eight').style.height = "0px";
+        document.querySelector('#play-box-eight').style.backgroundColor = "transparent";
+    }
+}
+document.querySelector('#play-one').onclick = function (){
+    document.querySelector('#player-audio').src = 'music/Polyphia _ The Worst (Official Audio).mp3';
+}
+document.querySelector('#play-two').onclick = function (){
+    document.querySelector('#player-audio').src = 'music/Interstellar OST 08 Mountains by Hans Zimmer.mp3';
+}
+document.querySelector('#play-three').onclick = function (){
+    document.querySelector('#player-audio').src = 'music/03 Heart-Shaped Box.mp3';
+}
+document.querySelector('#play-four').onclick = function (){
+    document.querySelector('#player-audio').src = 'music/10 - G.O.A.T..flac';
+}
+document.querySelector('#play-five').onclick = function (){
+    document.querySelector('#player-audio').src = 'music/06 - Bittersweet.flac';
+}
+document.querySelector('#play-six').onclick = function (){
+    document.querySelector('#player-audio').src = 'music/test.wav';
+}
+document.querySelector('#play-seven').onclick = function (){
+    document.querySelector('#player-audio').src = 'music/test.wav';
+}
+document.querySelector('#play-eight').onclick = function (){
+    document.querySelector('#player-audio').src = 'music/test.wav';
 }
 function colorSettings(){
     document.body.style.backgroundColor = document.querySelector('#color-settings').value;
