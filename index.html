@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body><!--
+    <div id="loading-screen">
+        <img id="loading-img" src="icons/load.svg">
+    </div>
+    LOCK SCREEN
+    <div id="lock-screen">
+        <form>
+            <p>PIN</p>
+            <input id="password" type="password">
+            <table>
+                <tr>
+                    <td id="one">1</td>
+                    <td id="two">2</td>
+                    <td id="three">3</td>
+                </tr>
+                <tr>
+                    <td id="four">4</td>
+                    <td id="five">5</td>
+                    <td id="six">6</td>
+                </tr>
+                <tr>
+                    <td id="seven">7</td>
+                    <td id="eight">8</td>
+                    <td id="nine">9</td>
+                </tr>
+                <tr>
+                    <td id="clear">C</td>
+                    <td id="zero">0</td>
+                    <td id="ok" onclick="authentication()">OK</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    MAIN PAGE LAYOUT-->
+    <div id="main-lock-overlay">
+        <div id="clock">
+            <p id="clock-time"></p>
+            <p id="clock-date"></p>
+        </div>
+        <div id="app-slider">
+            <div id="info-message"></div>
+            <table id="apps">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img src="icons/gallery.svg"></td>
+                    <td></td>
+                    <td></td>
+                    <td><img id="lock" src="icons/lock.svg"></td>
+                </tr>
+                <tr>
+                    <td><img src="icons/fb.svg"></td>
+                    <td><img id="mail" src="icons/mail.svg"></td>
+                    <td><img src="icons/google.svg"></td>
+                    <td><img id="info-app" src="icons/file.svg"></td>
+                </tr>
+                <tr>
+                    <td><img src="icons/yt.svg"></td>
+                    <td><img id="settings" src="icons/settings.svg"></td>
+                    <td><img id="chrome" src="icons/chrome.svg"></td>
+                    <td><img src="icons/msg.svg"></td>
+                </tr>
+            </table>
+            <table id="apps-second">
+                <tr>
+                    <td><img src="icons/gallery.svg"></td>
+                    <td><img src="icons/icon10.svg"></td>
+                    <td><img src="icons/icon9.svg"></td>
+                    <td><img src="icons/icon7.svg"></td>
+                </tr>
+                <tr>
+                    <td><img src="icons/icon6.svg"></td>
+                    <td><img src="icons/mail.svg"></td>
+                    <td><img src="icons/icon5.svg"></td>
+                    <td><img src="icons/icon4.svg"></td>
+                </tr>
+                <tr>
+                    <td><img src="icons/icon12.svg"></td>
+                    <td><img src="icons/lock.svg"></td>
+                    <td><img src="icons/icon3.svg"></td>
+                    <td><img src="icons/msg.svg"></td>
+                </tr>
+                <tr>
+                    <td><img src="icons/fb.svg"></td>
+                    <td><img src="icons/chrome.svg"></td>
+                    <td><img src="icons/google.svg"></td>
+                    <td><img src="icons/file.svg"></td>
+                </tr>
+                <tr>
+                    <td><img src="icons/icon2.svg"></td>
+                    <td><img src="icons/icon1.svg"></td>
+                    <td><img src="icons/yt.svg"></td>
+                    <td><img src="icons/settings.svg"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="app-slider-points">
+            <div id="app-slider-point-one" onclick="firstSlide()"></div>
+            <div id="app-slider-point-two" onclick="secondSlide()"></div>
+        </div>
+        <table id="fixed-apps">
+            <tr>
+                <td><img src="icons/phone.svg"></img></td>
+                <td><img src="icons/message.svg"></img></td>
+                <td><img id="player" src="icons/play.svg"></img></td>
+                <td><img src="icons/camera.svg"></img></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--MAIL APP-->
+    <div id="mail-app">
+        <div id="mail-header">
+            <img id="mail-home" src="icons/back.svg">
+            <img src="icons/mail.svg">
+            <p>Primary</p>
+        </div>
+        <div id="mail-header-margin"></div>
+        <div id="mail-cont">
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+            <div class="mail-box">
+                <p class="mail-title">Google Services</p>
+                <p class="mail-addres">example@gmail.com</p>
+                <p class="mail-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae cum magnifice primo dici viderentur, considerata minus probabantur.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--CHROME APP-->
+    <div id="chrome-app">
+        <div id="chrome-header">
+            <img id="chrome-home" src="icons/home.svg">
+            <form>
+                <input id="search-bar" type="search" placeholder="Addres URL">
+            </form>
+            <img id="search-icon" src="icons/search.svg" onclick="searchUrl()">
+            <div id="chrome-tabs">
+                1
+            </div>
+            <img src="icons/dot.svg" id="dots">
+        </div>
+        <div id="chrome-header-margin"></div>
+        <object id="chrome-content" type="text/html" data="https://en.m.wikipedia.org/wiki/Main_Page">
+        </object>
+    </div>
+
+    <!--SETTINGS APP-->
+    <div id="settings-app">
+        <div id="settings-header">
+            <img id="settings-home" src="icons/home.svg">
+            <img src="icons/settings.svg">
+            <p>Settings</p>
+        </div>
+        <div id="setting-one">
+            <p>Change background color:</p>
+            <form>
+                <input id="color-settings" type="color">
+                <input id="color-button" type="button" onclick="colorSettings()" value="Submit">
+            </form>
+        </div>
+        <div id="setting-two">
+            <p>Paste image url to change wallpaper:</p>
+            <form>
+                <input id="url-settings" type="url">
+                <input id="url-button" type="button" onclick="urlSettings()" value="Submit">
+            </form>
+        </div>
+        <div id="setting-three">
+            <p>Change clock color:</p>
+            <form>
+                <input id="clock-settings" type="color">
+                <input id="clock-button" type="button" onclick="clockSettings()" value="Submit">
+            </form>
+        </div>
+        <div id="setting-four">
+            <p>Change your PIN:</p>
+            <form>
+                <input id="pin-settings" type="text" maxlength="4">
+                <input id="pin-button" type="button" onclick="pinSettings()" value="Submit">
+            </form>
+        </div>
+        <div id="setting-five"></div>
+    </div>
+
+    <!--GALLERY APP-->
+    <div id="gallery-app">
+        <div id="gallery-header">
+            <img id="gallery-home" src="icons/home.svg">
+            <img src="icons/gallery.svg">
+            <p>Gallery</p>
+        </div>
+        <div id="gallery-cont">
+            <div class="image-box"><img src="https://www.lochley.com/wp-content/uploads/2020/06/landscape-of-altausseer-lake-in-styria-austria-in-DGGTX2Z-1-1-300x300.jpg"></div>
+            <div class="image-box"><img src="https://expertphotography.com/wp-content/uploads/2018/07/Aspect-ratio-photography-ras-ul-had-beach-Oman-1.jpg"></div>
+            <div class="image-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLF7xfEcSBgwdgC6fe4zbQpbKDHSldZ2V_ow&usqp=CAU"></div>
+            <div class="image-box"><img src="https://www.lochley.com/wp-content/uploads/2020/06/landscape-of-altausseer-lake-in-styria-austria-in-DGGTX2Z-1-1-300x300.jpg"></div>
+            <div class="image-box"><img src="https://35hunter.files.wordpress.com/2020/02/49517387616_45a3357fb7_z.jpg?w=640"></div>
+            <div class="image-box"><img src="https://images.squarespace-cdn.com/content/v1/5b42d818f2e6b19bdcb36f43/1554593458450-7876F3DL0CQVO4Q902CZ/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlkZ2axuMlPfqFLWy-3Tjp4nKScCHg1XF4aLsQJlo6oYbA/The+Best+Landscape+Photographer+1.jpg"></div>
+            <div class="image-box"><img src="https://expertphotography.com/wp-content/uploads/2019/08/1-1.jpg"></div>
+        </div>
+        </div>
+    </div>
+
+    <!--PLAYER APP-->
+    <div id="player-app">
+        <div id="player-header">
+            <img id="player-home" src="icons/home.svg">
+            <img src="icons/play.svg">
+            <p>Player</p>
+        </div>
+        <div id="player-app-header"></div>
+        <div id="player-content">
+            <div id="play-box-one"><img class="play-img" src="https://expertphotography.com/wp-content/uploads/2019/08/1-1.jpg"><div id="play-one"></div></div>
+            <div id="play-box-two"><div class="play-overlay"></div></div>
+            <div id="play-box-three"><div class="play-overlay"></div></div>
+            <div id="play-box-four"><div class="play-overlay"></div></div>
+            <div id="play-box-five"><div class="play-overlay"></div></div>
+            <div id="play-box-six"><div class="play-overlay"></div></div>
+            <div id="play-box-seven"><div class="play-overlay"></div></div>
+            <div id="play-box-eight"><div class="play-overlay"></div></div>
+        </div>
+        <div id="player-current">
+            <audio controls src="music/test.wav"></audio>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

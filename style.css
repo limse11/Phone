@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+body{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 854px;
+    width: 420px;
+    padding: 0;/*
+    background-image: url('https://i.pinimg.com/originals/c5/b6/62/c5b662fd213ae56a79c782c6424caf2f.jpg');*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#loading-screen{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 1s;
+    z-index: 2;
+}
+#loading-screen #loading-img{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    animation: load 1s infinite linear;
+}
+@keyframes load{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+/*HOME PAGE LAYOUT*/
+#clock{
+    margin-left: 32px;
+    margin-top: 64px;
+    color: rgb(255, 255, 255);
+    padding: 0;
+}
+p#clock-time{
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    margin: 0;
+    padding: 0;
+}
+p#clock-time span{
+    margin-left: 4px;
+    font-size: 24px;
+}
+p#clock-date{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    padding-left: 12px;
+}
+#app-slider{
+    position: relative;
+    width: 200%;
+    left: 0;
+    transition-duration: 0.5s;
+}
+#app-slider-points{
+    position: absolute;
+    width: 48px;
+    height: 16px;
+    top: 734px;
+    transition-duration: 0.5s;
+    text-align: center;
+    margin-left: 186px;
+}
+#app-slider-point-one, #app-slider-point-two{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.384);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition-duration: 0.4s;
+}
+#app-slider-point-one{
+    background-color: #fff;
+}
+#apps{
+    position: relative;
+    width: 50%;
+    color: #fff;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition-duration: 0.5s;
+    float: left;
+    
+}
+#apps td {
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+#apps-second{
+    position: relative;
+    width: 50%;
+    color: #fff;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition-duration: 0.5s;
+    float: right;
+    
+}
+#apps-second td {
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+#apps img, #apps-second img, #fixed-apps img{
+    width: 60%;
+    height: 60%;
+    transition-duration: 0.2s;
+}
+#apps img:hover, #apps-second img:hover, #fixed-apps img:hover{
+    width: 70%;
+    height: 70%;
+}
+#fixed-apps{
+    display: table;
+    width: 100%;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+#fixed-apps td {
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+/*LOCK SCREEN*/
+#main-lock-overlay{
+    filter: blur(20px);
+    transition-duration: 0.2s;
+    overflow-x: hidden;
+}
+#lock-screen{
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    height: 854px;
+    width: 420px;
+    background-color: rgba(0, 0, 0, 0.466);
+    top: 11px;
+    text-align: center;
+    z-index: 1;
+}
+#lock-screen form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40%;
+}
+#lock-screen form p{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 40px;
+}
+#lock-screen form #password{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    height: 30px;
+    width: 60%;
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    outline: none;
+}
+#lock-screen form #password::placeholder{
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+}
+#lock-screen form table{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    display: table;
+    width: 100%;
+    color: #fff;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#lock-screen form table td{
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    transition-duration: 0.2s;
+}
+#lock-screen form table td:hover{
+    background-color: rgba(255, 255, 255, 0.233);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/*MAIL APP*/
+#mail-app{
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    height: 854px;
+    width: 420px;
+    background-color: #fff;
+    top: 11px;
+}
+#mail-app *{
+    box-sizing: border-box;
+}
+#mail-app #mail-header{
+    background-color: #fff;
+    position: fixed;
+    width: 420px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);
+    height: 80px;
+}
+#mail-app #mail-header img{
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    margin-top: 24px;
+    margin-right: 20px;
+}
+#mail-app #mail-header #mail-home{
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+    margin-top: 28px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+#mail-app #mail-header #mail-home:hover{
+    background-color: rgb(180, 180, 180);
+}
+#mail-app #mail-header p{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-top: 24px;
+    font-size: 24px;
+    color: rgb(255, 75, 75);
+    font-weight: bold;
+}
+#mail-app #mail-header-margin{
+    width: 100%;
+    height: 84px;
+}
+#mail-app #mail-cont{
+    box-sizing: border-box;
+    width: 100%;
+    height: 770px;
+    overflow-y: scroll;
+    scrollbar-color: #0000007e #00000000;
+    scrollbar-width: thin;
+}
+#mail-app #mail-cont::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+}
+#mail-app #mail-cont::-webkit-scrollbar-track {
+    background: transparent;
+}
+#mail-app #mail-cont::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.466);
+    border-right: none;
+    border-left: none;
+}
+#mail-app #mail-cont .mail-box{
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    height: 14%;
+    transition-duration: 0.2s;
+}
+#mail-app #mail-cont .mail-box:hover{
+    background-color: rgb(202, 202, 202);
+}
+#mail-app #mail-cont .mail-box .mail-title{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0,0,0);
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#mail-app #mail-cont .mail-box .mail-addres{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(39, 39, 39);
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 2px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+#mail-app #mail-cont .mail-box .mail-text{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*CHROME APP*/
+#chrome-app{
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    height: 854px;
+    width: 420px;
+    background-color: #fff;
+    top: 11px;
+}
+#chrome-app #chrome-header{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 420px;
+    height: 80px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);
+}
+#chrome-app #chrome-header-margin{
+    width: 100%;
+    height: 80px;
+}
+#chrome-app #chrome-header input[type="search"]{
+    border-radius: 100px;
+    background-color: rgb(238, 240, 245);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-left: 16px;
+    border: 1px solid rgb(175, 175, 175);
+    width: 55%;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 40px;
+    float: left;
+    outline: none;
+    padding-right: 40px;
+}
+#chrome-app #chrome-header #search-icon{
+    width: 22px;
+    height: 22px;
+    margin-right: -40px;
+    margin-left: -30px;
+    margin-top: 30px;
+}
+#chrome-app #chrome-header #chrome-tabs{
+    border: 2px solid rgb(0,0,0);
+    border-radius: 8px;
+    color: rgb(0,0,0);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    width: 22px;
+    height: 22px;
+    margin-top: 26px;
+    margin-left: 20px;
+    text-align: center;
+    transition-duration: 0.2s;
+    float: left;
+}
+#chrome-app #chrome-header #chrome-tabs:hover{
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+}
+#chrome-app #chrome-header img{
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 20px;
+    float: left;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+#chrome-app #chrome-header img:hover{
+    background-color: rgb(180, 180, 180);
+}
+#chrome-app #chrome-header #dots{
+    width: 24px;
+    height: 24px;
+    transform: rotate(90deg);
+    margin-top: 26px;
+    margin-left: 20px;
+    float: left;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+#chrome-app #chrome-content{
+    width: 100%; 
+    height: 774px;
+    overflow: auto;
+}
+
+/*SETTINGS APP*/
+#settings-app{
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    height: 854px;
+    width: 420px;
+    background-color: #fff;
+    top: 11px;
+}
+#settings-app #settings-header{
+    background-color: rgb(255, 255, 255);
+    width: 420px;
+    height: 60px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+#settings-app #settings-header img{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+#settings-app #settings-header img:hover{
+    background-color: rgb(180, 180, 180);
+}
+#settings-app #settings-header p{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+#settings-app #settings-header #settings-home{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+#settings-app #setting-one, #setting-two, #setting-three, #setting-four, #setting-five, #setting-six{
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    height: 150px;
+    transition-duration: 0.2s;
+}
+#settings-app #setting-one p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-left: 20px;
+    margin-top: 64px;
+}
+#settings-app #setting-one form{
+    float: right;
+}
+#settings-app #setting-one input[type="color"]{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin-top: 50px;
+    outline: none;
+}
+#settings-app #setting-one input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+#settings-app #setting-one input[type="color"]::-webkit-color-swatch {
+    padding: 0;
+    margin: 0;
+}
+#settings-app #setting-one #color-button{
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(61, 123, 255);
+    border: 2px solid rgb(61, 123, 255);
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 57px;
+    transition-duration: 0.2s;
+}
+#settings-app #setting-one #color-button:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);
+}
+#settings-app #setting-two p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-left: 20px;
+    margin-top: 42px;
+}
+#settings-app #setting-two input[type="url"]{
+    border-radius: 100px;
+    background-color: rgb(238, 240, 245);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border: 1px solid rgb(175, 175, 175);
+    width: 65%;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+    outline: none;
+}
+#settings-app #setting-two #url-button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(61, 123, 255);
+    border: 2px solid rgb(61, 123, 255);
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    float: right;
+    transition-duration: 0.2s;
+}
+#settings-app #setting-two #url-button:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);
+}
+#settings-app #setting-three p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-left: 20px;
+    margin-top: 64px;
+}
+#settings-app #setting-three form{
+    float: right;
+}
+#settings-app #setting-three input[type="color"]{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin-top: 50px;
+    outline: none;
+}
+#settings-app #setting-three input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+#settings-app #setting-three input[type="color"]::-webkit-color-swatch {
+    padding: 0;
+    margin: 0;
+}
+#settings-app #setting-three #clock-button{
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(61, 123, 255);
+    border: 2px solid rgb(61, 123, 255);
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 57px;
+    transition-duration: 0.2s;
+}
+#settings-app #setting-three #clock-button:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);
+}
+#settings-app #setting-four p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-left: 20px;
+    margin-top: 42px;
+}
+#settings-app #setting-four input[type="text"]{
+    border-radius: 100px;
+    background-color: rgb(238, 240, 245);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border: 1px solid rgb(175, 175, 175);
+    width: 65%;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+    text-align: center;
+    outline: none;
+}
+#settings-app #setting-four #pin-button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(61, 123, 255);
+    border: 2px solid rgb(61, 123, 255);
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    float: right;
+    transition-duration: 0.2s;
+}
+#settings-app #setting-four #pin-button:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);
+}
+
+/*GALLERY APP*/
+#gallery-app{ 
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    height: 854px;
+    width: 420px;
+    background-color: #fff;
+    top: 11px;
+}
+#gallery-app #gallery-header{
+    background-color: rgb(255, 255, 255);
+    width: 420px;
+    height: 60px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+#gallery-app #gallery-header img{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    transition-duration: 0.2s;
+}
+#gallery-app #gallery-header img:hover{
+    background-color: rgb(180, 180, 180);
+}
+#gallery-app #gallery-header p{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+#gallery-app #gallery-header #gallery-home{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+#gallery-app #gallery-header-margin{
+    width: 100%;
+    height: 60px;
+}
+#gallery-app #gallery-cont{
+    box-sizing: border-box;
+    width: 100%;
+    height: 770px;
+    overflow-y: scroll;
+    scrollbar-color: #0000007e #00000000;
+    scrollbar-width: thin;
+}
+#gallery-app #gallery-cont::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+}
+#gallery-app #gallery-cont::-webkit-scrollbar-track {
+    background: transparent;
+}
+#gallery-app #gallery-cont::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.466);
+    border-right: none;
+    border-left: none;
+}
+#gallery-app #gallery-cont .image-box{
+    float: left;
+    width: 28%;
+    margin: 2%;
+    height: 100px;
+    background-color: #00000062;
+    display: block;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+#gallery-app #gallery-cont .image-box img{
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.2s;
+}
+#gallery-app #gallery-cont .image-box img:hover{
+    filter: saturate(0);
+}
+
+/*PLAYER APP*/
+#player-app{ 
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    height: 854px;
+    width: 420px;
+    background-color: #fff;
+    top: 11px;
+}
+#player-app #player-header{
+    background-color: rgb(0, 0, 0);
+    width: 420px;
+    height: 60px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+#player-app #player-header img{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    transition-duration: 0.2s;
+}
+#player-app #player-header img:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+#player-app #player-header p{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+#player-app #player-header #player-home{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+    background-color: rgb(255, 255, 255);
+}
+#player-app #player-header #player-home:hover{
+    background-color: rgb(134, 134, 134);
+    border-radius: 20px;
+}
+#player-app #player-header-margin{
+    width: 100%;
+    height: 60px;
+}
+#player-app #player-content{
+    width: 100%; 
+    height: 737px;
+    overflow-y: scroll;
+    scrollbar-color: #ffffff7e #00000000;
+    scrollbar-width: thin;
+    background-color: rgb(37, 37, 37);
+}
+#player-app #player-content::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+}
+#player-app #player-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+#player-app #player-content::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.466);
+    border-right: none;
+    border-left: none;
+}
+#player-app #player-content #play-box-one, #play-box-two, #play-box-three, #play-box-four, #play-box-five, #play-box-six, #play-box-seven, #play-box-eight{
+    position: relative;
+    width: 100%; 
+    height: 150px;
+    border-bottom: 1px solid black;
+}
+#player-app #player-content #play-one{
+    background-color: rgba(255, 0, 0, 0.692);
+    width: 100px;
+    height: 0px;
+    margin: 25px;
+    position: absolute;
+    transition-duration: 0.8s;
+}
+#player-app #player-content .play-img{
+    position: absolute;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+}
+#player-app #player-current{
+    height: 54px;
+    width: 100%;
+    border-top: 2px solid rgba(255, 255, 255, 0.747);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+}
+#player-app #player-current audio{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0%;
+}
+#player-app #player-current audio::-webkit-media-controls-panel{
+    height: 100%;
+}
