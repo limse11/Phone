@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body><!--
     <div id="loading-screen">
         <img id="loading-img" src="icons/load.svg">
     </div>
-    <!--LOCK SCREEN-->
+    LOCK SCREEN
     <div id="lock-screen">
         <form>
             <p>PIN</p>
@@ -431,6 +431,48 @@
         <div id="player-current">
             <audio id="player-audio" controls src="" autoplay></audio>
         </div>
+    </div>
+
+    <!--CALLS APP-->
+    <div id="calls-app">
+        <div id="calls-header">
+            <img id="calls-home" src="icons/home.svg">
+            <img src="icons/phone.svg">
+            <p>Phone</p>
+        </div>
+        <div id="calls-content">
+            
+        </div>
+        <div id="number-form">
+            <form>
+                <input id="number-field" type="text" value="9">
+            </form>
+        </div>
+        <div id="calls-numpad">
+            <table>
+                <tr>
+                    <td id="call-one">1</td>
+                    <td id="call-two">2</td>
+                    <td id="call-three">3</td>
+                </tr>
+                <tr>
+                    <td id="call-four">4</td>
+                    <td id="call-five">5</td>
+                    <td id="call-six">6</td>
+                </tr>
+                <tr>
+                    <td id="call-seven">7</td>
+                    <td id="call-eight">8</td>
+                    <td id="call-nine">9</td>
+                </tr>
+                <tr>
+                    <td id="call-clear">C</td>
+                    <td id="call-zero">0</td>
+                    <td id="call-ok" onclick="numberInput()">OK</td>
+                </tr>
+            </table>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
