@@ -1,1 +1,2 @@
-# Phone
+# -phone numpad
+# -gallery app
