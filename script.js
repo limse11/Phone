@@ -197,43 +197,43 @@ document.querySelector('#zero').onclick = function(){
     document.querySelector('#password').value = document.querySelector('#password').value + '0';
 
 }
-document.querySelector('#call-one').onclick = function(){
+function callOne(){
     document.querySelector('#number-field').value = document.querySelector('#number-field').value + '1';
 
 }
-document.querySelector('#call-two').onclick = function(){
+function callTwo(){
     document.querySelector('#number-field').value = document.querySelector('#number-field').value + '2';
 
 }
-document.querySelector('#call-three').onclick = function(){
+function callThree(){
     document.querySelector('#number-field').value = document.querySelector('#number-field').value + '3';
 
 }
-document.querySelector('#call-four').onclick = function(){
+function callFour(){
     document.querySelector('#number-field').value = document.querySelector('#number-field').value + '4';
 
 }
-document.querySelector('#call-five').onclick = function(){
+function callFive(){
     document.querySelector('#number-field').value = document.querySelector('#number-field').value + '5';
 
 }
-document.querySelector('#call-six').onclick = function(){
+function callSix(){
     document.querySelector('#number-field').value = document.querySelector('#number-field').value + '6';
 
 }
-document.querySelector('#call-seven').onclick = function(){
+function callSeven(){
     document.querySelector('#number-field').value = document.querySelector('#number-field').value + '7';
 
 }
-document.querySelector('#call-eight').onclick = function(){
+function callEight(){
     document.querySelector('#number-field').value = document.querySelector('#number-field').value + '8';
 
 }
-document.querySelector('#call-nine').onclick = function(){
+function callNine(){
     document.querySelector('#number-field').value = document.querySelector('#number-field').value + '9';
 
 }
-document.querySelector('#call-zero').onclick = function(){
+function callZero(){
     document.querySelector('#number-field').value = document.querySelector('#number-field').value + '0';
 
 }
@@ -252,11 +252,17 @@ document.querySelector('#ok').onclick = function(){
 document.querySelector('#clear').onclick = function(){
     document.querySelector('#password').value = '';
 }
-document.querySelector('#call-clear').onclick = function(){
+function callClear(){
     document.querySelector('#number-field').value = '';
 }
 function numberInput(){
     document.querySelector('#number-field').value = '';
+}
+function callsAppExit(){
+    document.querySelector('#calls-app').style.display = "none";
+}
+function callsApp(){
+    document.querySelector('#calls-app').style.display = "block";
 }
 document.querySelector('#lock').onclick = function(){
     document.querySelector('#main-lock-overlay').style.filter = 'blur(20px)';

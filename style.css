@@ -878,7 +878,7 @@ p#clock-date{
 /*CALLS APP*/
 #calls-app{ 
     box-sizing: border-box;
-    display: block;
+    display: none;
     position: absolute;
     height: 854px;
     width: 420px;

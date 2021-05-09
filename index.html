@@ -41,7 +41,7 @@
         </form>
     </div>
     <!--MAIN PAGE LAYOUT-->
-    <div id="main-lock-overlay">
+    <div id="main-lock-overlaya">
         <div id="clock">
             <p id="clock-time"></p>
             <p id="clock-date"></p>
@@ -119,7 +119,7 @@
         </div>
         <table id="fixed-apps">
             <tr>
-                <td><img src="icons/phone.svg"></img></td>
+                <td><img src="icons/phone.svg" onclick="callsApp()"></img></td>
                 <td><img src="icons/message.svg"></img></td>
                 <td><img id="player" src="icons/play.svg"></img></td>
                 <td><img src="icons/camera.svg"></img></td>
@@ -436,7 +436,7 @@
     <!--CALLS APP-->
     <div id="calls-app">
         <div id="calls-header">
-            <img id="calls-home" src="icons/home.svg">
+            <img id="calls-home" src="icons/home.svg" onclick="callsAppExit()">
             <img src="icons/phone.svg">
             <p>Phone</p>
         </div>
@@ -445,30 +445,30 @@
         </div>
         <div id="number-form">
             <form>
-                <input id="number-field" type="text" value="9">
+                <input id="number-field" type="text" value="">
             </form>
         </div>
         <div id="calls-numpad">
             <table>
                 <tr>
-                    <td id="call-one">1</td>
-                    <td id="call-two">2</td>
-                    <td id="call-three">3</td>
+                    <td onclick="callOne()">1</td>
+                    <td onclick="callTwo()">2</td>
+                    <td onclick="callThree()">3</td>
                 </tr>
                 <tr>
-                    <td id="call-four">4</td>
-                    <td id="call-five">5</td>
-                    <td id="call-six">6</td>
+                    <td onclick="callFour()">4</td>
+                    <td onclick="callFive()">5</td>
+                    <td onclick="callSix()">6</td>
                 </tr>
                 <tr>
-                    <td id="call-seven">7</td>
-                    <td id="call-eight">8</td>
-                    <td id="call-nine">9</td>
+                    <td onclick="callSeven()">7</td>
+                    <td onclick="callEight()">8</td>
+                    <td onclick="callNine()">9</td>
                 </tr>
                 <tr>
-                    <td id="call-clear">C</td>
-                    <td id="call-zero">0</td>
-                    <td id="call-ok" onclick="numberInput()">OK</td>
+                    <td onclick="callClear()">C</td>
+                    <td onclick="callZero()">0</td>
+                    <td onclick="numberInput()">OK</td>
                 </tr>
             </table>
         </div>
