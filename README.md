@@ -1,2 +1,2 @@
-# js document.onclick not working
+# -js document.onclick not working
 # -gallery app
