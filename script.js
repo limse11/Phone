@@ -25,8 +25,8 @@ function czas(){
     var nazwa = dayName[data.getDay()];
     var dzien = data.getDate();
     var mies = data.getMonth() + 1;
-    document.querySelector("#clock-time").innerHTML = godz+':'+min+'<span id="clock-sec">'+sek+'</span>';
-    document.querySelector("#clock-date").innerHTML = nazwa+' '+dzien+'/'+mies;
+    document.querySelector('#clock-time').innerHTML = godz+':'+min+'<span id="clock-sec">'+sek+'</span>';
+    document.querySelector('#clock-date').innerHTML = nazwa+' '+dzien+'/'+mies;
 }
 setInterval(czas, 1000);
 var tabNum = 1;
