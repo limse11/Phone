@@ -44,7 +44,9 @@ body{
       transform: rotate(359deg);
     }
 }
-
+input{
+    outline: none;
+}
 /*HOME PAGE LAYOUT*/
 #clock{
     margin-left: 32px;
