@@ -30,33 +30,30 @@ function czas(){
 }
 setInterval(czas, 1000);
 var tabNum = 1;
-document.querySelector('#mail').onclick = function mailApp(){
+function mailApp(){
     document.querySelector('#mail-app').style.display = "block";
 }
-document.querySelector('#chrome').onclick = function chromeApp(){
+function chromeApp(){
     document.querySelector('#chrome-app').style.display = "block";
 }
-document.querySelector('#chrome-home').onclick = function chromeAppExit(){
+function chromeAppExit(){
     document.querySelector('#chrome-app').style.display = "none";
     tabNum++;
     document.querySelector('#chrome-tabs').innerHTML = tabNum;
 }
-document.querySelector('#mail-home').onclick = function mailAppExit(){
+function mailAppExit(){
     document.querySelector('#mail-app').style.display = "none";
 }
-document.querySelector('#settings').onclick = function settingsApp(){
+function settingsApp(){
     document.querySelector('#settings-app').style.display = "block";
 }
-document.querySelector('#settings-home').onclick = function settingsAppExit(){
+function settingsAppExit(){
     document.querySelector('#settings-app').style.display = "none";
 }
-document.querySelector('#player').onclick = function playerApp(){
+function playerApp(){
     document.querySelector('#player-app').style.display = "block";
 }
-document.querySelector('#player-home').onclick = function playerAppExit(){
-    document.querySelector('#player-app').style.display = "none";
-}
-document.querySelector('#player-home').onclick = function playerAppExit(){
+function playerAppExit(){
     document.querySelector('#player-app').style.display = "none";
 }
 document.querySelector('#play-box-one').onmouseover = function (){
@@ -123,29 +120,30 @@ document.querySelector('#play-box-eight').onmouseover = function (){
         document.querySelector('#play-box-eight').style.backgroundColor = "transparent";
     }
 }
-document.querySelector('#play-one').onclick = function (){
-    document.querySelector('#player-audio').src = 'music/Polyphia _ The Worst (Official Audio).mp3';
+var audioPlayer = document.querySelector('#player-audio');
+function playOne(){
+    audioPlayer.src = 'music/Polyphia _ The Worst (Official Audio).mp3';
 }
-document.querySelector('#play-two').onclick = function (){
-    document.querySelector('#player-audio').src = 'music/Interstellar OST 08 Mountains by Hans Zimmer.mp3';
+function playTwo(){
+    audioPlayer.src = 'music/Interstellar OST 08 Mountains by Hans Zimmer.mp3';
 }
-document.querySelector('#play-three').onclick = function (){
-    document.querySelector('#player-audio').src = 'music/03 Heart-Shaped Box.mp3';
+function playThree(){
+    audioPlayer.src = 'music/03 Heart-Shaped Box.mp3';
 }
-document.querySelector('#play-four').onclick = function (){
-    document.querySelector('#player-audio').src = 'music/10 - G.O.A.T..flac';
+function playFour(){
+    audioPlayer.src = 'music/10 - G.O.A.T..flac';
 }
-document.querySelector('#play-five').onclick = function (){
-    document.querySelector('#player-audio').src = 'music/06 - Bittersweet.flac';
+function playFive(){
+    daudioPlayer.src = 'music/06 - Bittersweet.flac';
 }
-document.querySelector('#play-six').onclick = function (){
-    document.querySelector('#player-audio').src = 'music/test.wav';
+function playSix(){
+    audioPlayer.src = 'music/test.wav';
 }
-document.querySelector('#play-seven').onclick = function (){
-    document.querySelector('#player-audio').src = 'music/test.wav';
+function playSeven(){
+    audioPlayer.src = 'music/test.wav';
 }
-document.querySelector('#play-eight').onclick = function (){
-    document.querySelector('#player-audio').src = 'music/test.wav';
+function playEight(){
+    audioPlayer.src = 'music/test.wav';
 }
 function colorSettings(){
     document.body.style.backgroundColor = document.querySelector('#color-settings').value;
@@ -157,100 +155,102 @@ function clockSettings(){
     document.querySelector('#clock-time').style.color = document.querySelector('#clock-settings').value;
     document.querySelector('#clock-date').style.color = document.querySelector('#clock-settings').value;
 }
-document.querySelector('#one').onclick = function(){
-    document.querySelector('#password').value = document.querySelector('#password').value + '1';
+var passwordField = document.querySelector('#password');
+function one(){
+    passwordField.value = passwordField.value + '1';
 
 }
-document.querySelector('#two').onclick = function(){
-    document.querySelector('#password').value = document.querySelector('#password').value + '2';
+function two(){
+    passwordField.value = passwordField.value + '2';
 
 }
-document.querySelector('#three').onclick = function(){
-    document.querySelector('#password').value = document.querySelector('#password').value + '3';
+function three(){
+    passwordField.value = passwordField.value + '3';
 
 }
-document.querySelector('#four').onclick = function(){
-    document.querySelector('#password').value = document.querySelector('#password').value + '4';
+function four(){
+    passwordField.value = passwordField.value + '4';
 
 }
-document.querySelector('#five').onclick = function(){
-    document.querySelector('#password').value = document.querySelector('#password').value + '5';
+function five(){
+    passwordField.value = passwordField.value + '5';
 
 }
-document.querySelector('#six').onclick = function(){
-    document.querySelector('#password').value = document.querySelector('#password').value + '6';
+function six(){
+    passwordField.value = passwordField.value + '6';
 
 }
-document.querySelector('#seven').onclick = function(){
-    document.querySelector('#password').value = document.querySelector('#password').value + '7';
+function seven(){
+    passwordField.value = passwordField.value + '7';
 
 }
-document.querySelector('#eight').onclick = function(){
-    document.querySelector('#password').value = document.querySelector('#password').value + '8';
+function eight(){
+    passwordField.value = passwordField.value + '8';
 
 }
-document.querySelector('#nine').onclick = function(){
-    document.querySelector('#password').value = document.querySelector('#password').value + '9';
+function nine(){
+    passwordField.value = passwordField.value + '9';
 
 }
-document.querySelector('#zero').onclick = function(){
-    document.querySelector('#password').value = document.querySelector('#password').value + '0';
+function zero(){
+    passwordField.value = passwordField.value + '0';
 
 }
+var numberField = document.querySelector('#number-field');
 function callOne(){
-    document.querySelector('#number-field').value = document.querySelector('#number-field').value + '1';
+    numberField.value = numberField.value + '1';
 
 }
 function callTwo(){
-    document.querySelector('#number-field').value = document.querySelector('#number-field').value + '2';
+    numberField.value = numberField.value + '2';
 
 }
 function callThree(){
-    document.querySelector('#number-field').value = document.querySelector('#number-field').value + '3';
+    numberField.value = numberField.value + '3';
 
 }
 function callFour(){
-    document.querySelector('#number-field').value = document.querySelector('#number-field').value + '4';
+    numberField.value = numberField.value + '4';
 
 }
 function callFive(){
-    document.querySelector('#number-field').value = document.querySelector('#number-field').value + '5';
+    numberField.value = numberField.value + '5';
 
 }
 function callSix(){
-    document.querySelector('#number-field').value = document.querySelector('#number-field').value + '6';
+    numberField.value = numberField.value + '6';
 
 }
 function callSeven(){
-    document.querySelector('#number-field').value = document.querySelector('#number-field').value + '7';
+    numberField.value = numberField.value + '7';
 
 }
 function callEight(){
-    document.querySelector('#number-field').value = document.querySelector('#number-field').value + '8';
+    numberField.value = numberField.value + '8';
 
 }
 function callNine(){
-    document.querySelector('#number-field').value = document.querySelector('#number-field').value + '9';
+    numberField.value = numberField.value + '9';
 
 }
 function callZero(){
-    document.querySelector('#number-field').value = document.querySelector('#number-field').value + '0';
+    numberField.value = numberField.value + '0';
 
 }
 var pinVer='4989';
-document.querySelector('#ok').onclick = function(){
-    if (document.querySelector('#password').value === pinVer){
+function authentication(){
+    if (passwordField.value === pinVer){
         document.querySelector('#lock-screen').style.display = 'none';
         document.querySelector('#main-lock-overlay').style.filter = 'none';
-        document.querySelector('#password').value = '';
+        passwordField.value = '';
     }
     else{
-        document.querySelector('#password').value = '';
-        document.querySelector('#password').placeholder = 'Wrong PIN';
+        passwordField.value = '';
+        passwordField.placeholder = 'Wrong PIN';
     }
 }
-document.querySelector('#clear').onclick = function(){
-    document.querySelector('#password').value = '';
+function clear(){
+    passwordField.value = '';
 }
 function callClear(){
     document.querySelector('#number-field').value = '';

@@ -18,23 +18,23 @@
             <input id="password" type="password">
             <table>
                 <tr>
-                    <td id="one">1</td>
-                    <td id="two">2</td>
-                    <td id="three">3</td>
+                    <td id="one" onclick="one()">1</td>
+                    <td id="two" onclick="two()">2</td>
+                    <td id="three" onclick="three()">3</td>
                 </tr>
                 <tr>
-                    <td id="four">4</td>
-                    <td id="five">5</td>
-                    <td id="six">6</td>
+                    <td id="four" onclick="four()">4</td>
+                    <td id="five" onclick="five()">5</td>
+                    <td id="six" onclick="six()">6</td>
                 </tr>
                 <tr>
-                    <td id="seven">7</td>
-                    <td id="eight">8</td>
-                    <td id="nine">9</td>
+                    <td id="seven" onclick="seven()">7</td>
+                    <td id="eight" onclick="eight()">8</td>
+                    <td id="nine" onclick="nine()">9</td>
                 </tr>
                 <tr>
-                    <td id="clear">C</td>
-                    <td id="zero">0</td>
+                    <td id="clear" onclick="clear()">C</td>
+                    <td id="zero" onclick="zero()">0</td>
                     <td id="ok" onclick="authentication()">OK</td>
                 </tr>
             </table>
@@ -69,14 +69,14 @@
                 </tr>
                 <tr>
                     <td><img src="icons/fb.svg"></td>
-                    <td><img id="mail" src="icons/mail.svg"></td>
+                    <td><img id="mail" src="icons/mail.svg" onclick="mailApp()"></td>
                     <td><img src="icons/google.svg"></td>
                     <td><img id="info-app" src="icons/file.svg"></td>
                 </tr>
                 <tr>
                     <td><img src="icons/yt.svg"></td>
-                    <td><img id="settings" src="icons/settings.svg"></td>
-                    <td><img id="chrome" src="icons/chrome.svg"></td>
+                    <td><img id="settings" src="icons/settings.svg" onclick="settingsApp()"></td>
+                    <td><img id="chrome" src="icons/chrome.svg" onclick="chromeApp()"></td>
                     <td><img src="icons/msg.svg"></td>
                 </tr>
             </table>
@@ -121,7 +121,7 @@
             <tr>
                 <td><img src="icons/phone.svg" onclick="callsApp()"></img></td>
                 <td><img src="icons/message.svg"></img></td>
-                <td><img id="player" src="icons/play.svg"></img></td>
+                <td><img id="player" src="icons/play.svg" onclick="playerApp()"></img></td>
                 <td><img src="icons/camera.svg"></img></td>
             </tr>
         </table>
@@ -130,7 +130,7 @@
     <!--MAIL APP-->
     <div id="mail-app">
         <div id="mail-header">
-            <img id="mail-home" src="icons/back.svg">
+            <img id="mail-home" src="icons/back.svg" onclick="mailAppExit()">
             <img src="icons/mail.svg">
             <p>Primary</p>
         </div>
@@ -282,7 +282,7 @@
     <!--CHROME APP-->
     <div id="chrome-app">
         <div id="chrome-header">
-            <img id="chrome-home" src="icons/home.svg">
+            <img id="chrome-home" src="icons/home.svg" onclick="chromeAppExit()">
             <form>
                 <input id="search-bar" type="search" placeholder="Addres URL">
             </form>
@@ -300,7 +300,7 @@
     <!--SETTINGS APP-->
     <div id="settings-app">
         <div id="settings-header">
-            <img id="settings-home" src="icons/home.svg">
+            <img id="settings-home" src="icons/home.svg" onclick="settingsAppExit()">
             <img src="icons/settings.svg">
             <p>Settings</p>
         </div>
@@ -357,7 +357,7 @@
     <!--PLAYER APP-->
     <div id="player-app">
         <div id="player-header">
-            <img id="player-home" src="icons/player-home.svg">
+            <img id="player-home" src="icons/player-home.svg" onclick="playerAppExit()">
             <img src="icons/play.svg">
             <p>Player</p>
         </div>
@@ -365,7 +365,7 @@
         <div id="player-content">
             <div id="play-box-one">
                 <img class="play-img" src="music/themosthated.jpg">
-                <div id="play-one">
+                <div id="play-one" onclick="playOne()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
                 <p class="play-title">The Worst</p>
@@ -373,7 +373,7 @@
             </div>
             <div id="play-box-two">
                 <img class="play-img" src="music/int-cover.jpeg">
-                <div id="play-two">
+                <div id="play-two" onclick="playTwo()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
                 <p class="play-title">Mountains</p>
@@ -381,7 +381,7 @@
             </div>
             <div id="play-box-three">
                 <img class="play-img" src="music/nir-cover.jpg">
-                <div id="play-three">
+                <div id="play-three" onclick="playThree()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
                 <p class="play-title">Heart Shaped Box</p>
@@ -389,7 +389,7 @@
             </div>
             <div id="play-box-four">
                 <img class="play-img" src="music/nlnd-cover.jpg">
-                <div id="play-four">
+                <div id="play-four" onclick="playFour()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
                 <p class="play-title">G.O.A.T.</p>
@@ -397,7 +397,7 @@
             </div>
             <div id="play-box-five">
                 <img class="play-img" src="music/ren-cover.jpg">
-                <div id="play-five">
+                <div id="play-five" onclick="playFive()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
                 <p class="play-title">Bittersweet</p>
@@ -405,7 +405,7 @@
             </div>
             <div id="play-box-six">
                 <img class="play-img" src="icons/play-button.svg">
-                <div id="play-six">
+                <div id="play-six" onclick="playSix()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
                 <p class="play-title">Play Title</p>
@@ -413,7 +413,7 @@
             </div>
             <div id="play-box-seven">
                 <img class="play-img" src="https://expertphotography.com/wp-content/uploads/2019/08/1-1.jpg">
-                <div id="play-seven">
+                <div id="play-seven" onclick="playSeven()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
                 <p class="play-title">Play Title</p>
@@ -421,7 +421,7 @@
             </div>
             <div id="play-box-eight">
                 <img class="play-img" src="https://expertphotography.com/wp-content/uploads/2019/08/1-1.jpg">
-                <div id="play-eight">
+                <div id="play-eight" onclick="playEight()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
                 <p class="play-title">Play Title</p>
