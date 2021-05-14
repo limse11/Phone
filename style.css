@@ -872,6 +872,7 @@ p#clock-date{
     width: 100%;
     margin: 0;
     border-radius: 0%;
+	outline: none;
 }
 #player-app #player-current audio::-webkit-media-controls-panel{
     height: 100%;
@@ -935,8 +936,9 @@ p#clock-date{
     width: 100%; 
     height: 300px;
     overflow-y: scroll;
-    scrollbar-color: #ffffff7e #00000000;
+    scrollbar-color: #0000007e #00000000;
     scrollbar-width: thin;
+    overflow-y: scroll;
 }
 #calls-app #calls-content::-webkit-scrollbar {
     display: block;
@@ -946,9 +948,20 @@ p#clock-date{
     background: transparent;
 }
 #calls-app #calls-content::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.466);
+    background-color: rgba(0, 0, 0, 0.466);
     border-right: none;
     border-left: none;
+}
+#calls-app #calls-content div{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 42px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 27px;
 }
 #calls-app #calls-numpad{
     margin: 0;

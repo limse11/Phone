@@ -235,7 +235,6 @@ function callNine(){
 }
 function callZero(){
     numberField.value = numberField.value + '0';
-
 }
 var pinVer='4989';
 function authentication(){
@@ -253,10 +252,15 @@ function clear(){
     passwordField.value = '';
 }
 function callClear(){
-    document.querySelector('#number-field').value = '';
+    numberField.value = '';
 }
+var callContent = document.querySelector('#calls-content');
 function numberInput(){
-    document.querySelector('#number-field').value = '';
+    var number = document.createElement('DIV');
+    callContent.appendChild(number);
+    var numberText = document.createTextNode("+48 "+numberField.value);
+    number.appendChild(numberText);
+    numberField.value = "";
 }
 function callsAppExit(){
     document.querySelector('#calls-app').style.display = "none";
