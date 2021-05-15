@@ -120,7 +120,7 @@
         <table id="fixed-apps">
             <tr>
                 <td><img src="icons/phone.svg" onclick="callsApp()"></img></td>
-                <td><img src="icons/message.svg"></img></td>
+                <td><img src="icons/message.svg" onclick="messagesApp()"></img></td>
                 <td><img id="player" src="icons/play.svg" onclick="playerApp()"></img></td>
                 <td><img src="icons/camera.svg"></img></td>
             </tr>
@@ -335,25 +335,6 @@
         <div id="setting-five"></div>
     </div>
 
-    <!--GALLERY APP-->
-    <div id="gallery-app">
-        <div id="gallery-header">
-            <img id="gallery-home" src="icons/home.svg">
-            <img src="icons/gallery.svg">
-            <p>Gallery</p>
-        </div>
-        <div id="gallery-cont">
-            <div class="image-box"><img src="https://www.lochley.com/wp-content/uploads/2020/06/landscape-of-altausseer-lake-in-styria-austria-in-DGGTX2Z-1-1-300x300.jpg"></div>
-            <div class="image-box"><img src="https://expertphotography.com/wp-content/uploads/2018/07/Aspect-ratio-photography-ras-ul-had-beach-Oman-1.jpg"></div>
-            <div class="image-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLF7xfEcSBgwdgC6fe4zbQpbKDHSldZ2V_ow&usqp=CAU"></div>
-            <div class="image-box"><img src="https://www.lochley.com/wp-content/uploads/2020/06/landscape-of-altausseer-lake-in-styria-austria-in-DGGTX2Z-1-1-300x300.jpg"></div>
-            <div class="image-box"><img src="https://35hunter.files.wordpress.com/2020/02/49517387616_45a3357fb7_z.jpg?w=640"></div>
-            <div class="image-box"><img src="https://images.squarespace-cdn.com/content/v1/5b42d818f2e6b19bdcb36f43/1554593458450-7876F3DL0CQVO4Q902CZ/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlkZ2axuMlPfqFLWy-3Tjp4nKScCHg1XF4aLsQJlo6oYbA/The+Best+Landscape+Photographer+1.jpg"></div>
-            <div class="image-box"><img src="https://expertphotography.com/wp-content/uploads/2019/08/1-1.jpg"></div>
-        </div>
-        </div>
-    </div>
-
     <!--PLAYER APP-->
     <div id="player-app">
         <div id="player-header">
@@ -364,68 +345,68 @@
         <div id="player-app-header"></div>
         <div id="player-content">
             <div id="play-box-one">
-                <img class="play-img" src="music/themosthated.jpg">
+                <img class="play-img" src="music/nocturne-cover.jpg">
                 <div id="play-one" onclick="playOne()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
-                <p class="play-title">The Worst</p>
-                <p class="play-small-title">Polyphia</p>
+                <p class="play-title">Nocturne Op. 27 No. 2</p>
+                <p class="play-small-title">Chopin</p>
             </div>
             <div id="play-box-two">
-                <img class="play-img" src="music/int-cover.jpeg">
+                <img class="play-img" src="music/concerto-cover.jpg">
                 <div id="play-two" onclick="playTwo()">
+                    <img class="play-button" src="icons/play-button.svg">
+                </div>
+                <p class="play-title">Concerto Grosso in G Minor</p>
+                <p class="play-small-title">Vivaldi</p>
+            </div>
+            <div id="play-box-three">
+                <img class="play-img" src="music/int-cover.jpeg">
+                <div id="play-three" onclick="playThree()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
                 <p class="play-title">Mountains</p>
                 <p class="play-small-title">Hans Zimmer</p>
             </div>
-            <div id="play-box-three">
-                <img class="play-img" src="music/nir-cover.jpg">
-                <div id="play-three" onclick="playThree()">
-                    <img class="play-button" src="icons/play-button.svg">
-                </div>
-                <p class="play-title">Heart Shaped Box</p>
-                <p class="play-small-title">Nirvana</p>
-            </div>
             <div id="play-box-four">
-                <img class="play-img" src="music/nlnd-cover.jpg">
+                <img class="play-img" src="music/albinoni-cover.jpg">
                 <div id="play-four" onclick="playFour()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
-                <p class="play-title">G.O.A.T.</p>
-                <p class="play-small-title">Polyphia</p>
+                <p class="play-title">Adagio in G Minor</p>
+                <p class="play-small-title">Tomaso Albinoni</p>
             </div>
             <div id="play-box-five">
-                <img class="play-img" src="music/ren-cover.jpg">
+                <img class="play-img" src="music/variation-cover.jpg">
                 <div id="play-five" onclick="playFive()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
-                <p class="play-title">Bittersweet</p>
-                <p class="play-small-title">Polyphia</p>
+                <p class="play-title">Piano Variation</p>
+                <p class="play-small-title">Vivaldi</p>
             </div>
             <div id="play-box-six">
-                <img class="play-img" src="icons/play-button.svg">
+                <img class="play-img" src="music/int-cover.jpeg">
                 <div id="play-six" onclick="playSix()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
-                <p class="play-title">Play Title</p>
-                <p class="play-small-title">The Smiths</p>
+                <p class="play-title">No Time For Caution</p>
+                <p class="play-small-title">Hans Zimmer</p>
             </div>
             <div id="play-box-seven">
-                <img class="play-img" src="https://expertphotography.com/wp-content/uploads/2019/08/1-1.jpg">
+                <img class="play-img" src="music/schubert-cover.jpg">
                 <div id="play-seven" onclick="playSeven()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
-                <p class="play-title">Play Title</p>
-                <p class="play-small-title">The Smiths</p>
+                <p class="play-title">Ave Maria</p>
+                <p class="play-small-title">Schubert</p>
             </div>
             <div id="play-box-eight">
-                <img class="play-img" src="https://expertphotography.com/wp-content/uploads/2019/08/1-1.jpg">
+                <img class="play-img" src="music/vivaldi-cover.jpeg">
                 <div id="play-eight" onclick="playEight()">
                     <img class="play-button" src="icons/play-button.svg">
                 </div>
-                <p class="play-title">Play Title</p>
-                <p class="play-small-title">The Smiths</p>
+                <p class="play-title">Oboe Concerto in D Minor</p>
+                <p class="play-small-title">Vivaldi</p>
             </div>
         </div>
         <div id="player-current">
@@ -473,6 +454,26 @@
             </table>
         </div>
     </div>
+
+    <!--MESSAGES APP-->
+    <div id="messages-app">
+        <div id="messages-header">
+            <img id="messages-home" src="icons/home.svg" onclick="messagesAppExit()">
+            <img src="icons/message.svg">
+            <p>Messages</p>
+        </div>
+        <div id="messages-content">
+            
+        </div>
+        <div id="messages-form">
+            <form>
+                <textarea id="messages-field" value="">
+                </textarea>
+            </form>
+            <button id="send-button" onclick="messageInput()">Send</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

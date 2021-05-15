@@ -122,28 +122,28 @@ document.querySelector('#play-box-eight').onmouseover = function (){
 }
 var audioPlayer = document.querySelector('#player-audio');
 function playOne(){
-    audioPlayer.src = 'music/Polyphia _ The Worst (Official Audio).mp3';
+    audioPlayer.src = 'music/nocturne.mp3';
 }
 function playTwo(){
-    audioPlayer.src = 'music/Interstellar OST 08 Mountains by Hans Zimmer.mp3';
+    audioPlayer.src = 'music/concerto.mp3';
 }
 function playThree(){
-    audioPlayer.src = 'music/03 Heart-Shaped Box.mp3';
+    audioPlayer.src = 'music/mountains.mp3';
 }
 function playFour(){
-    audioPlayer.src = 'music/10 - G.O.A.T..flac';
+    audioPlayer.src = 'music/albinoni.mp3';
 }
 function playFive(){
-    daudioPlayer.src = 'music/06 - Bittersweet.flac';
+    audioPlayer.src = 'music/variation.mp3';
 }
 function playSix(){
-    audioPlayer.src = 'music/test.wav';
+    audioPlayer.src = 'music/notime.mp3';
 }
 function playSeven(){
-    audioPlayer.src = 'music/test.wav';
+    audioPlayer.src = 'music/schubert.mp3';
 }
 function playEight(){
-    audioPlayer.src = 'music/test.wav';
+    audioPlayer.src = 'music/vivaldi.mp3';
 }
 function colorSettings(){
     document.body.style.backgroundColor = document.querySelector('#color-settings').value;
@@ -262,11 +262,26 @@ function numberInput(){
     number.appendChild(numberText);
     numberField.value = "";
 }
+var messageField = document.querySelector('#messages-field');
+var messageContent = document.querySelector('#messages-content');
+function messageInput(){
+    var message = document.createElement('DIV');
+    messageContent.appendChild(message);
+    var messageText = document.createTextNode(messageField.value);
+    message.appendChild(messageText);
+    messageField.value = "";
+}
 function callsAppExit(){
     document.querySelector('#calls-app').style.display = "none";
 }
 function callsApp(){
     document.querySelector('#calls-app').style.display = "block";
+}
+function messagesAppExit(){
+    document.querySelector('#messages-app').style.display = "none";
+}
+function messagesApp(){
+    document.querySelector('#messages-app').style.display = "block";
 }
 document.querySelector('#lock').onclick = function(){
     document.querySelector('#main-lock-overlay').style.filter = 'blur(20px)';
