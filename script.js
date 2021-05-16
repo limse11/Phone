@@ -196,6 +196,10 @@ function zero(){
     passwordField.value = passwordField.value + '0';
 
 }
+function clearPass(){
+    passwordField.value = '';
+
+}
 var numberField = document.querySelector('#number-field');
 function callOne(){
     numberField.value = numberField.value + '1';
@@ -248,9 +252,7 @@ function authentication(){
         passwordField.placeholder = 'Wrong PIN';
     }
 }
-function clear(){
-    passwordField.value = '';
-}
+
 function callClear(){
     numberField.value = '';
 }

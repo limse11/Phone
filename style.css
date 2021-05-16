@@ -1050,5 +1050,5 @@ p#clock-date{
     margin-top: -100px;
 }
 #messages-app #messages-form #send-button:hover{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
 }

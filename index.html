@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Test</title>
 </head>
-<body><!--
+<body>
     <div id="loading-screen">
         <img id="loading-img" src="icons/load.svg">
     </div>
-    LOCK SCREEN
+
+    <!--LOCK SCREEN-->
     <div id="lock-screen">
         <form>
             <p>PIN</p>
@@ -33,15 +34,16 @@
                     <td id="nine" onclick="nine()">9</td>
                 </tr>
                 <tr>
-                    <td id="clear" onclick="clear()">C</td>
+                    <td id="clear" onclick="clearPass()">C</td>
                     <td id="zero" onclick="zero()">0</td>
                     <td id="ok" onclick="authentication()">OK</td>
                 </tr>
             </table>
         </form>
     </div>
+
     <!--MAIN PAGE LAYOUT-->
-    <div id="main-lock-overlaya">
+    <div id="main-lock-overlay">
         <div id="clock">
             <p id="clock-time"></p>
             <p id="clock-date"></p>
